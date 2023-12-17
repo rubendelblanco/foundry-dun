@@ -1,0 +1,54 @@
+{
+    "Actor":{
+        "types": ["character", "npc", "merc", "beast", "group"],
+        "templates": {
+            "common": {
+                "abilities": {
+                    "value_points":10,
+                    "mov":0,
+                    "combat":0,
+                    "strength":0,
+                    "shooting":0,
+                    "armor":0,
+                    "agility":0,
+                    "intelligence":0,
+                    "mana":0,
+                    "courage":0,
+                    "vitality":0,
+                    "dexterity":0,
+                    "luck":0,
+                    "experience":0,
+                    "perception":0
+                },
+                "traits":{
+                    "size":"med"
+                }
+            }
+        },
+        "character": {
+            "templates": ["common"],
+            "attributes": {
+                "level": {
+                  "value": 10
+                }
+            }
+        }
+    },
+    "Item":{
+        "types": ["profession", "race", "skill", "armor","special_elements","dark_player",
+        "furniture","spells","campaign_player","campaign_danger","travel","common_object","special_object","weapon","armor","shield"],
+        "weapon":{
+            "attributes": {
+                "name":"",
+                "damage":"",
+                "effects":null,
+                "one_hand":true,
+                "description":"",
+                "range":0,
+                "fumble":1,
+                "weight":0,
+                "cost":0
+            }
+        }
+    }
+}

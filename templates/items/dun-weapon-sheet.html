@@ -1,0 +1,66 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <nav class="sheet-tabs" data-group="primary-tabs">
+        <a class="item" data-tab="tab1" data-group="primary-tabs">Tab 1</li>
+        <a class="item" data-tab="tab2" data-group="primary-tabs">Tab 2</li>
+    </nav>
+    
+    <section class="content">
+        <div class="tab" data-tab="tab1" data-group="primary-tabs">Content 1</div>
+        <div class="tab" data-tab="tab2" data-group="primary-tabs">Content 2</div>
+    </section>
+    <!-- Header Section-->
+    <header class="sheet-header">
+        <div class="container">
+            <div>
+                {{item.name}}
+            </div>
+        </div>
+    </header>
+    <div style="width:200px; float:left">
+            <img src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    </div>
+    <div style="width:300px; float: right;">
+        <div>
+            <i class="fa-solid fa-burst"></i></i> Daño
+        </div>
+        <div>
+            <input name="system.attributes.damage" type="text" value="{{system.attributes.damage}}"/>
+        </div>
+        <div>
+            <i class="fa-solid fa-bullseye"></i> Alcance
+        </div>
+        <div>
+            <input name="system.attributes.range" type="Number" value="{{system.attributes.range}}"/>
+        </div>
+        <div>
+            <i class="fa-solid fa-person-falling-burst"></i> Rotura
+        </div>
+        <div>
+            <input name="system.attributes.fumble" type="Number" value="{{system.attributes.fumble}}"/>
+        </div>
+        <div>
+            <i class="fa-solid fa-weight-hanging"></i> Peso
+        </div>
+        <div>
+            <input name="system.attributes.weight" type="Number" value="{{system.attributes.weight}}"/>
+        </div>
+        <div>
+            <i class="fa-solid fa-coin"></i> Coste
+        </div>
+        <div>
+            <input name="system.attributes.cost" type="Number" value="{{system.attributes.cost}}"/>
+        </div>
+        <div>
+            Atributos
+        </div>
+        <div>
+            <select name="importantChoice">
+                {{selectOptions system.attributes.effects selected=value nameAttr="key" labelAttr="label"}}
+              </select>
+              {{filePicker type="image" target="img"}}
+        </div>
+    </div>
+</form>
+
+  
+  

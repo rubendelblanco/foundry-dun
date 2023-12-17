@@ -1,0 +1,27 @@
+{
+    "id":"dun",
+    "title":"Dungeon Universalis",
+    "description":"A system for playing the famous game board Dungeon Universalis",
+    "author":"Ruben del Blanco",
+    "version":"0.01",
+    "minimunCoreVersion":"11.307",
+    "compatibility": {
+        "minimum": "10",
+        "verified": "11.307"
+    },
+    "esmodules": [
+        "dun.js"
+    ],
+    "styles":[
+        "dun.css"
+    ],
+    "packs":[
+
+    ],
+    "languages":[
+
+    ],
+    "gridDistance":5,
+    "gridUnits":"m",
+    "initiative":"2d6"
+}

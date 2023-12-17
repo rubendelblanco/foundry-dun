@@ -1,0 +1,193 @@
+@font-face {
+    font-family: Macondo;
+    src: url('./assets/fonts/Macondo-Regular.ttf');
+  }
+
+.contenedor-imagen {
+    position: relative;
+    display: inline-block; /* Esto permite que el contenedor se ajuste al tamaño de la imagen */
+    z-index: 1;
+  }
+
+  input.pc-sheet-value{
+    font-family: Macondo;
+    width:5%;
+  }
+  
+  .pc-sheet-value {
+    font-family: Macondo;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.877); /* Color del texto */
+    font-size: 18px; /* Tamaño del texto */
+    font-weight: bold; /* Peso de la fuente, si lo deseas */
+    text-align: center; /* Alinea el texto al centro */
+  }
+
+  .actor-icon {
+    position: absolute;
+    top: 25%;
+    left: 37%;
+  }
+
+  .contenedor-imagen img{
+    z-index: 10;
+  }
+
+  .actor-icon img {
+    width:120px;
+    z-index: -2 ;
+  }
+  
+  /* Estilos adicionales para hacer la imagen responsive */
+  img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+  }
+
+  #pv {
+    top: 11%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 83%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+  }
+
+  #mov {
+    top: 28%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 18.5%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+  }
+
+  #mov-temp {
+    top: 28%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 10.5%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+    background-color: azure;
+  }
+
+  #cc {
+    top: 34%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 18.5%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+  }
+
+  #cc-temp {
+    top: 34%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 10.5%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+    background-color: azure;
+  }
+
+  #fue {
+    top: 40%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 18.5%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+  }
+
+  #fue-temp {
+    top: 40%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 10.5%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+    background-color: azure;
+  }
+
+  #pun {
+    top: 46%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 18.5%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+  }
+
+  #pun-temp {
+    top: 46%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 10.5%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+    background-color: azure;
+  }
+
+  #arm {
+    top: 52%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 18.5%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+  }
+
+  #arm-temp {
+    top: 52%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 10.5%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+    background-color: azure;
+  }
+
+  #for {
+    top: 59%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 23.5%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+  }
+
+  #agi {
+    top: 28%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 81%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+  }
+
+  #agi-temp {
+    top: 28%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 89%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+    background-color: azure;
+  }
+
+  #int {
+    top: 34%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 81%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+  }
+
+  #int-temp {
+    top: 34%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 89%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+    background-color: azure;
+  }
+
+  #mana {
+    top: 40%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 81%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+  }
+
+  #mana-temp {
+    top: 40%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 89%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+    background-color: azure;
+  }
+
+  #val {
+    top: 46%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 81%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+  }
+
+  #val-temp {
+    top: 46%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 89%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+    background-color: azure;
+  }
+
+  #vit {
+    top: 52%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 81%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+  }
+
+  #vit-temp {
+    top: 52%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 89%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+    background-color: azure;
+  }
+
+  #exp {
+    top: 59%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 76%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+  }
