@@ -22,7 +22,8 @@
                 },
                 "traits":{
                     "size":"med"
-                }
+                },
+                "weight":0
             }
         },
         "character": {

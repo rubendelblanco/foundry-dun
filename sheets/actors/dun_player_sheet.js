@@ -19,18 +19,40 @@ export default class DUNPlayerSheet extends ActorSheet {
     } 
 
     activateListeners(html) {
-      console.log('activate listeners')
       super.activateListeners(html);
-  
-      // Everything below here is only needed if the sheet is editable
-      //if (!this.options.editable) return;
   
       // Delete Inventory Item
       html.find('.item-delete').click(ev => {
         const li = $(ev.currentTarget).parents(".item");
         var theItem = this.actor.items.get(li.data("itemId"));
+        
+        if (theItem.system.attributes.weight !== undefined){
+          this.actor.system.weight -= theItem.system.attributes.weight;
+          this.actor.system.weight = this.actor.system.weight < 0 ? 0 : this.actor.system.weight;
+
+          this.actor.update({"system.weight":this.actor.system.weight})
+        }
+
         theItem.delete();
       });
+
+      /**
+       * Add weight equipment when item is dropped in character
+       */
+      Hooks.once("dropActorSheetData", (actor, sheet, data) => {
+        var weightInPC = 0;
+        actor.items.forEach(item => {
+          if (item.system.attributes.weight !== undefined || item.system.attributes.weight > 0) {
+            weightInPC += item.system.attributes.weight;
+          }
+        });
+
+        var newItemId = data['uuid'];
+        newItemId = newItemId.replace('Item.','');
+        weightInPC += Item.get(newItemId).system.attributes.weight;
+        actor.update({"system.weight":weightInPC})
+      });
+
     }
   
   }

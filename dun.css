@@ -191,3 +191,42 @@
     left: 76%; /* Centra el texto horizontalmente */
     transform: translate(-50%, -50%); /* Centra el texto verticalmente */
   }
+
+  #weight {
+    top: 93%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 72%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente */
+  }
+
+  .sheet header.sheet-header {
+    display: block;
+  }
+
+  /**************************************************************/
+  /************************* ITEMS ******************************/
+  /**************************************************************/
+
+  ol.items-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-type: none;
+  }
+
+  .item-controls{
+    text-align: center;
+    color:red;
+  }
+
+  .item-image{
+    -webkit-transition:.4s all;
+  }
+
+  .item-transition {
+    -webkit-transform: scale(2); 
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+    position: absolute;
+    width: 30%;
+}

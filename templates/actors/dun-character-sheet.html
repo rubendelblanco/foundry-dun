@@ -5,81 +5,85 @@
         <a class="item" data-tab="tab2" data-group="primary-tabs">Armas</li>
     </nav>
 </header>
-    <section class="content">
-        <div class="tab" data-tab="tab1" data-group="primary-tabs">
-            <form class="actor-sheet {{cssClass}}" autocomplete="off">
-                <!-- Header Section-->
-                    <div class="contenedor-imagen">
-                        <img src="systems/dun/assets/fndficha_mp.png"/> 
-                        <input width="2" id="pv" class="pc-sheet-value" name="system.abilities.value_points" type="Number"
-                         value="{{system.abilities.value_points}}"/>
-                         <input width="2" id="mov" class="pc-sheet-value" name="system.abilities.mov" type="Number"
-                         value="{{system.abilities.mov}}"/>
-                         <input width="2" id="cc" class="pc-sheet-value" name="system.abilities.combat" type="Number"
-                         value="{{system.abilities.combat}}"/>
-                         <input width="2" id="fue" class="pc-sheet-value" name="system.abilities.strength" type="Number"
-                         value="{{system.abilities.strength}}"/>
-                         <input width="2" id="pun" class="pc-sheet-value" name="system.abilities.shooting" type="Number"
-                         value="{{system.abilities.shooting}}"/>
-                         <input width="2" id="arm" class="pc-sheet-value" name="system.abilities.armor" type="Number"
-                         value="{{system.abilities.armor}}"/>
-                         <input width="2" id="for" class="pc-sheet-value" name="system.abilities.luck" type="Number"
-                         value="{{system.abilities.luck}}"/>
-                         <input width="2" id="agi" class="pc-sheet-value" name="system.abilities.agility" type="Number"
-                         value="{{system.abilities.agility}}"/>
-                         <input width="2" id="int" class="pc-sheet-value" name="system.abilities.intelligence" type="Number"
-                         value="{{system.abilities.intelligence}}"/>
-                         <input width="2" id="mana" class="pc-sheet-value" name="system.abilities.mana" type="Number"
-                         value="{{system.abilities.mana}}"/>
-                         <input width="2" id="val" class="pc-sheet-value" name="system.abilities.courage" type="Number"
-                         value="{{system.abilities.courage}}"/>
-                         <input width="2" id="vit" class="pc-sheet-value" name="system.abilities.vitality" type="Number"
-                         value="{{system.abilities.vitality}}"/>
-                         <input width="2" id="exp" class="pc-sheet-value" name="system.abilities.experience" type="Number"
-                         value="{{system.abilities.experience}}"/>
-                         <div class="actor-icon">
-                            <!--<div id="fotopj" style="background-image:url('{{actor.img}}')" height="128" width="128"></div>-->
+<section class="content">
+    <div class="tab" data-tab="tab1" data-group="primary-tabs">
+        <form class="actor-sheet {{cssClass}}" autocomplete="off">
+            <!-- Header Section-->
+                <div class="contenedor-imagen">
+                    <img src="systems/dun/assets/fndficha_mp.png"/> 
+                    <input width="2" id="pv" class="pc-sheet-value" name="system.abilities.value_points" type="Number"
+                        value="{{system.abilities.value_points}}"/>
+                        <input width="2" id="mov" class="pc-sheet-value" name="system.abilities.mov" type="Number"
+                        value="{{system.abilities.mov}}"/>
+                        <input width="2" id="cc" class="pc-sheet-value" name="system.abilities.combat" type="Number"
+                        value="{{system.abilities.combat}}"/>
+                        <input width="2" id="fue" class="pc-sheet-value" name="system.abilities.strength" type="Number"
+                        value="{{system.abilities.strength}}"/>
+                        <input width="2" id="pun" class="pc-sheet-value" name="system.abilities.shooting" type="Number"
+                        value="{{system.abilities.shooting}}"/>
+                        <input width="2" id="arm" class="pc-sheet-value" name="system.abilities.armor" type="Number"
+                        value="{{system.abilities.armor}}"/>
+                        <input width="2" id="for" class="pc-sheet-value" name="system.abilities.luck" type="Number"
+                        value="{{system.abilities.luck}}"/>
+                        <input width="2" id="agi" class="pc-sheet-value" name="system.abilities.agility" type="Number"
+                        value="{{system.abilities.agility}}"/>
+                        <input width="2" id="int" class="pc-sheet-value" name="system.abilities.intelligence" type="Number"
+                        value="{{system.abilities.intelligence}}"/>
+                        <input width="2" id="mana" class="pc-sheet-value" name="system.abilities.mana" type="Number"
+                        value="{{system.abilities.mana}}"/>
+                        <input width="2" id="val" class="pc-sheet-value" name="system.abilities.courage" type="Number"
+                        value="{{system.abilities.courage}}"/>
+                        <input width="2" id="vit" class="pc-sheet-value" name="system.abilities.vitality" type="Number"
+                        value="{{system.abilities.vitality}}"/>
+                        <input width="2" id="exp" class="pc-sheet-value" name="system.abilities.experience" type="Number"
+                        value="{{system.abilities.experience}}"/>
+                        <div class="actor-icon">
+                        <!--<div id="fotopj" style="background-image:url('{{actor.img}}')" height="128" width="128"></div>-->
                             <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="128" width="128"/>
-            
                         </div>
-            
-                        <input width="2" id="mov-temp" class="pc-sheet-value" name="system.abilities.mov-temp" type="Number"
-                         value="{{system.abilities.mov-temp}}"/>
-                         <input width="2" id="cc-temp" class="pc-sheet-value" name="system.abilities.cc-temp" type="Number"
-                         value="{{system.abilities.cc-temp}}"/>
-                         <input width="2" id="fue-temp" class="pc-sheet-value" name="system.abilities.fue-temp" type="Number"
-                         value="{{system.abilities.fue-temp}}"/>
-                         <input width="2" id="pun-temp" class="pc-sheet-value" name="system.abilities.pun-temp" type="Number"
-                         value="{{system.abilities.pun-temp}}"/>
-                         <input width="2" id="arm-temp" class="pc-sheet-value" name="system.abilities.arm-temp" type="Number"
-                         value="{{system.abilities.arm-temp}}"/>
-                         <input width="2" id="agi-temp" class="pc-sheet-value" name="system.abilities.agi-temp" type="Number"
-                         value="{{system.abilities.agi-temp}}"/>
-                         <input width="2" id="int-temp" class="pc-sheet-value" name="system.abilities.int-temp" type="Number"
-                         value="{{system.abilities.int-temp}}"/>
-                         <input width="2" id="mana-temp" class="pc-sheet-value" name="system.abilities.mana-temp" type="Number"
-                         value="{{system.abilities.mana-temp}}"/>
-                         <input width="2" id="val-temp" class="pc-sheet-value" name="system.abilities.val-temp" type="Number"
-                         value="{{system.abilities.val-temp}}"/>
-                         <input width="2" id="vit-temp" class="pc-sheet-value" name="system.abilities.vit-temp" type="Number"
-                         value="{{system.abilities.vit-temp}}"/>
-                    </div> 
-            </form>
-        </div>
-        <div class="tab" data-tab="tab2" data-group="primary-tabs">
-            <ol class="items-list">
-                {{#each actor.items as |item id|}}
-                <li class="item flexrow" data-item-id="{{item._id}}">
-                    <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
-                    <h4 class="item-name">{{item.name}}</h4>
-                    <div class="item-controls">
-                    <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                        <input width="2" id="weight" class="pc-sheet-value" readonly name="system.weight" type="Number"
+                        value="{{system.weight}}"/>
+        
+                    <input width="2" id="mov-temp" class="pc-sheet-value" name="system.abilities.mov-temp" type="Number"
+                        value="{{system.abilities.mov-temp}}"/>
+                        <input width="2" id="cc-temp" class="pc-sheet-value" name="system.abilities.cc-temp" type="Number"
+                        value="{{system.abilities.cc-temp}}"/>
+                        <input width="2" id="fue-temp" class="pc-sheet-value" name="system.abilities.fue-temp" type="Number"
+                        value="{{system.abilities.fue-temp}}"/>
+                        <input width="2" id="pun-temp" class="pc-sheet-value" name="system.abilities.pun-temp" type="Number"
+                        value="{{system.abilities.pun-temp}}"/>
+                        <input width="2" id="arm-temp" class="pc-sheet-value" name="system.abilities.arm-temp" type="Number"
+                        value="{{system.abilities.arm-temp}}"/>
+                        <input width="2" id="agi-temp" class="pc-sheet-value" name="system.abilities.agi-temp" type="Number"
+                        value="{{system.abilities.agi-temp}}"/>
+                        <input width="2" id="int-temp" class="pc-sheet-value" name="system.abilities.int-temp" type="Number"
+                        value="{{system.abilities.int-temp}}"/>
+                        <input width="2" id="mana-temp" class="pc-sheet-value" name="system.abilities.mana-temp" type="Number"
+                        value="{{system.abilities.mana-temp}}"/>
+                        <input width="2" id="val-temp" class="pc-sheet-value" name="system.abilities.val-temp" type="Number"
+                        value="{{system.abilities.val-temp}}"/>
+                        <input width="2" id="vit-temp" class="pc-sheet-value" name="system.abilities.vit-temp" type="Number"
+                        value="{{system.abilities.vit-temp}}"/>
+                </div> 
+        </form>
+    </div>
+    <div class="tab" data-tab="tab2" data-group="primary-tabs">
+        <ol class="items-list">
+            {{#each actor.items as |item id|}}
+            <li class="item" data-item-id="{{item._id}}">
+                <div>
+                    <div class="item-image">
+                        <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
                     </div>
-                </li>
-                {{/each}}
-            </ol>
-        </div>
-    </section>
+                    <div class="item-controls">
+                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                    </div>
+                </div>
+            </li>
+            {{/each}}
+        </ol>
+    </div>
+</section>
 
 
   

@@ -41,5 +41,16 @@ export default class DUNWeaponSheet extends ItemSheet {
       return sheetData;
     }
 
+    activateListeners(html) {
+      console.log('items activate listeners')
+      super.activateListeners(html);
+  
+      $('.item-image').hover(function(){
+        $(this).addClass('item-transition');
+      },function(){
+          $(this).removeClass('item-transition');   
+      });
+    }
+
   }
   
